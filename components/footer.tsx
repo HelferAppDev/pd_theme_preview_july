@@ -9,17 +9,17 @@ export function Footer() {
 
   return (
     <footer className="bg-white border-t border-gray-200 mt-auto">
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Left: Impressum + Copyright */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <Link
               href="/impressum"
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-xs text-gray-600 hover:text-gray-900 transition-colors"
             >
               Impressum
             </Link>
-            <p className="text-sm text-gray-600">
+            <p className="text-xs text-gray-600">
               © {currentYear} proLog Digital. Alle Rechte vorbehalten.
             </p>
             <p className="text-xs text-gray-500">
@@ -32,8 +32,8 @@ export function Footer() {
             <Image
               src="/prolog-mice.svg"
               alt="proLog Digital Mäuse"
-              width={50}
-              height={25}
+              width={33}
+              height={17}
             />
           </div>
         </div>
