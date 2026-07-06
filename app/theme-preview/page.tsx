@@ -1,8 +1,7 @@
 'use client';
 
 import { MdArrowForward, MdClose, MdRefresh, MdSkipNext } from 'react-icons/md';
-import { FiHelpCircle, FiCompass, FiMapPin, FiCpu, FiMessageSquare, FiLogIn } from 'react-icons/fi';
-import { LuBrainCircuit } from 'react-icons/lu';
+import { FiHelpCircle, FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3, FiLogIn } from 'react-icons/fi';
 import {
   ButtonWeiter,
   ButtonÜberspringen,
@@ -15,11 +14,11 @@ import { CategoryCard } from '@/components/cards/category-card';
 
 export default function ThemePreview() {
   const categoryExamples = [
-    { icon: <FiCompass size={48} />, title: 'Raumkognition', disabled: false },
-    { icon: <FiMessageSquare size={48} />, title: 'Sprache', disabled: true },
-    { icon: <LuBrainCircuit size={48} />, title: 'Gedächtnis', disabled: false },
-    { icon: <FiMapPin size={48} />, title: 'Motorik', disabled: false },
-    { icon: <FiCpu size={48} />, title: 'Kognition', disabled: true },
+    { icon: <FiMic size={48} />, title: 'Artikulation', disabled: false },
+    { icon: <FiHeadphones size={48} />, title: 'Sprachverstehen', disabled: false },
+    { icon: <FiBookOpen size={48} />, title: 'Wortschatz', disabled: false },
+    { icon: <FiLayers size={48} />, title: 'Grammatik', disabled: false },
+    { icon: <FiEdit3 size={48} />, title: 'Schriftsprache', disabled: true },
   ];
 
   return (
