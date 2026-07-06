@@ -19,7 +19,8 @@ export default function Home() {
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">H1 - Screen Title</p>
           <p className="text-sm text-gray-500">Bold (700), 32px/2rem, line-height 1.2</p>
         </div>
-        <h1>Willkommen zu Font und Buttons</h1>
+        <h1 className="tracking-02">Willkommen zu Font und Buttons</h1>
+        <p className="text-sm text-gray-600 mt-2">Verwendete Schrift: Fira Sans. Letter-spacing: 0.02em angewendet, um die Lesbarkeit zu verbessern — besonders hilfreich bei visuellen Wahrnehmungsproblemen wie Dyslexie.</p>
       </section>
 
       {/* H2 - Section Title */}
@@ -77,6 +78,21 @@ export default function Home() {
           <ButtonSchließen />
           <ButtonWiederholen />
           <ButtonAnmelden />
+        </div>
+        <div className="space-y-4">
+          <p className="text-sm font-semibold text-gray-700">Design-Regeln für Standard-Buttons:</p>
+          <p className="text-sm text-gray-600"><strong>Warum das Icon VOR (links) dem Text stehen sollte</strong></p>
+          <p className="text-sm text-gray-600"><strong>Visuelles Priming (Voraktivierung):</strong> Das menschliche Gehirn verarbeitet visuelle Symbole (Formen, Bilder) bis zu 60.000-mal schneller als geschriebenen Text. Ein Patient mit Aphasie (Sprachstörung) oder Alexie (Lesestörung) erfasst das Icon sofort. Sieht er zuerst das Icon (z. B. eine Lupe oder ein Fragezeichen), versteht sein Gehirn die Funktion des Buttons, bevor er das Wort „Suchen“ oder „Hilfe“ mühsam dekodieren muss. Das senkt die Frustrationsgrenze enorm.</p>
+          <p className="text-sm text-gray-600"><strong>Der natürliche Lesefluss (Links-nach-Rechts):</strong> In der westlichen Kultur lesen wir von links nach rechts. Das Auge scannt ein Element immer am linken Rand zuerst. Steht dort das Icon, liefert es den sofortigen Kontext für den darauffolgenden Text. Steht das Icon rechts, muss der Patient erst den Text lesen (oder versuchen zu lesen), um danach das bestätigende Icon zu sehen – das erhöht die kognitive Last.</p>
+          <p className="text-sm text-gray-600"><strong>Klarer visueller Anker bei Listen:</strong> Wenn Sie mehrere Buttons untereinander haben, bilden die linksbündigen Icons eine saubere visuelle Linie. Der Patient kann die Liste von oben nach unten anhand der Symbole „scannen“, ohne eine einzige Zeile Text lesen zu müssen.</p>
+        </div>
+        <div className="space-y-2">
+          <p className="text-sm text-gray-600">Design-Regel für Navigations-Icons:</p>
+          <p className="text-sm text-gray-600">Es gibt eine wichtige Ausnahme, basierend auf der räumlichen Metapher (Zeitstrahl / Bewegungsrichtung):</p>
+          <ul className="list-disc list-inside text-sm text-gray-600">
+            <li><strong>Zurück</strong>: Icon links vom Text — Design: <code>[ ← Zurück ]</code>. Grund: Der Pfeil zeigt nach links (zurück in die Vergangenheit / vorherige Seite).</li>
+            <li><strong>Weiter</strong>: Icon rechts vom Text — Design: <code>[ Weiter → ]</code>. Grund: Der Pfeil zeigt nach rechts (in die Zukunft / nächste Seite) und leitet den Blick aus dem Button heraus.</li>
+          </ul>
         </div>
       </section>
 

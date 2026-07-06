@@ -27,10 +27,11 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
             {shouldShowBackButton && (
               <button
                 onClick={() => router.back()}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="nav-button tracking-02 p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 aria-label="Zurück"
               >
-                <FiArrowLeft size={24} color="var(--color-secondary-blue)" />
+                <FiArrowLeft size={20} />
+                <span className="ml-1">Zurück</span>
               </button>
             )}
             
@@ -47,7 +48,7 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
           </div>
 
           {/* Center: Page Title */}
-          <h1 className="h2 flex-1 text-center text-gray-800">
+          <h1 className="h2 tracking-02 flex-1 text-center text-gray-800">
             {title}
           </h1>
 
@@ -58,7 +59,7 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
               aria-label="Einstellungen"
             >
-              <FiSettings size={24} color="var(--color-secondary-blue)" />
+              <FiSettings size={20} color="var(--color-secondary-green)" />
             </button>
 
             {/* Help Button */}
@@ -66,7 +67,7 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
               aria-label="Hilfe"
             >
-              <FiHelpCircle size={24} color="var(--color-secondary-blue)" />
+              <FiHelpCircle size={20} color="var(--color-secondary-green)" />
             </button>
           </div>
         </div>

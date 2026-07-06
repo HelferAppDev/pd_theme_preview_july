@@ -17,7 +17,7 @@ export default function Dashboard() {
         {/* Active Cards Section */}
         <div className="mb-12">
           <div className="mb-6">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
+            <h2 className="text-sm font-semibold tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
               Verfügbare Logopädie-Bausteine
             </h2>
           </div>
@@ -61,7 +61,7 @@ export default function Dashboard() {
         {/* Disabled Cards Section */}
         <div>
           <div className="mb-6">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
+            <h2 className="text-sm font-semibold tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
               Noch gesperrte Bereiche
             </h2>
           </div>

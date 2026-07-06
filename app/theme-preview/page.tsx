@@ -14,11 +14,11 @@ import { CategoryCard } from '@/components/cards/category-card';
 
 export default function ThemePreview() {
   const categoryExamples = [
-    { icon: <FiMic size={48} />, title: 'Artikulation', disabled: false },
-    { icon: <FiHeadphones size={48} />, title: 'Sprachverstehen', disabled: false },
-    { icon: <FiBookOpen size={48} />, title: 'Wortschatz', disabled: false },
-    { icon: <FiLayers size={48} />, title: 'Grammatik', disabled: false },
-    { icon: <FiEdit3 size={48} />, title: 'Schriftsprache', disabled: true },
+    { icon: <FiMic size={48} />, title: 'Artikulation', disabled: false, className: 'therapy-card artikulation c-green' },
+    { icon: <FiHeadphones size={48} />, title: 'Sprachverstehen', disabled: false, className: 'therapy-card verstehen c-blue' },
+    { icon: <FiBookOpen size={48} />, title: 'Wortschatz', disabled: false, className: 'therapy-card wortschatz c-violet' },
+    { icon: <FiLayers size={48} />, title: 'Grammatik', disabled: false, className: 'therapy-card grammatik c-blue' },
+    { icon: <FiEdit3 size={48} />, title: 'Schriftsprache', disabled: true, className: 'therapy-card schrift c-yellow' },
   ];
 
   return (
@@ -106,6 +106,7 @@ export default function ThemePreview() {
                   icon={category.icon}
                   title={category.title}
                   disabled={category.disabled}
+                  className={category.className}
                   onClick={() => !category.disabled && console.log(`Selected: ${category.title}`)}
                 />
               </div>

@@ -199,13 +199,28 @@ export default function DesignSystem() {
           {/* Buttons */}
           <div className="space-y-4">
             <h3>Buttons</h3>
+            <div className="space-y-4">
+              <p className="text-sm font-semibold text-gray-700">Design-Regeln für Standard-Buttons:</p>
+              <p className="text-sm text-gray-600"><strong>Warum das Icon VOR (links) dem Text stehen sollte</strong></p>
+              <p className="text-sm text-gray-600"><strong>Visuelles Priming (Voraktivierung):</strong> Das menschliche Gehirn verarbeitet visuelle Symbole (Formen, Bilder) bis zu 60.000-mal schneller als geschriebenen Text. Ein Patient mit Aphasie (Sprachstörung) oder Alexie (Lesestörung) erfasst das Icon sofort. Sieht er zuerst das Icon (z. B. eine Lupe oder ein Fragezeichen), versteht sein Gehirn die Funktion des Buttons, bevor er das Wort „Suchen“ oder „Hilfe“ mühsam dekodieren muss. Das senkt die Frustrationsgrenze enorm.</p>
+              <p className="text-sm text-gray-600"><strong>Der natürliche Lesefluss (Links-nach-Rechts):</strong> In der westlichen Kultur lesen wir von links nach rechts. Das Auge scannt ein Element immer am linken Rand zuerst. Steht dort das Icon, liefert es den sofortigen Kontext für den darauffolgenden Text. Steht das Icon rechts, muss der Patient erst den Text lesen (oder versuchen zu lesen), um danach das bestätigende Icon zu sehen – das erhöht die kognitive Last.</p>
+              <p className="text-sm text-gray-600"><strong>Klarer visueller Anker bei Listen:</strong> Wenn Sie mehrere Buttons untereinander haben, bilden die linksbündigen Icons eine saubere visuelle Linie. Der Patient kann die Liste von oben nach unten anhand der Symbole „scannen“, ohne eine einzige Zeile Text lesen zu müssen.</p>
+            </div>
+            <p className="text-sm text-gray-600 mt-2">Design-Regel für Navigations-Icons: Es gibt eine wichtige Ausnahme, basierend auf der räumlichen Metapher (Zeitstrahl / Bewegungsrichtung).</p>
+            <div className="space-y-4">
+              <p className="text-sm text-gray-600">Beispiele und Gründe:</p>
+              <ul className="list-disc list-inside text-sm text-gray-600">
+                <li><strong>Zurück</strong>: Icon links vom Text — <code>[ ← Zurück ]</code>. Grund: Der Pfeil zeigt nach links (zurück).</li>
+                <li><strong>Weiter</strong>: Icon rechts vom Text — <code>[ Weiter → ]</code>. Grund: Der Pfeil zeigt nach rechts (in die Zukunft) und führt den Blick aus dem Button heraus.</li>
+              </ul>
+            </div>
             <div className="space-y-6">
               {/* Primary Button */}
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-gray-700">Weiter (Primary CTA)</p>
                 <div className="flex flex-wrap gap-4">
                   <button className="button-label px-6 py-3 text-gray-900 rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#fff041' }}>
-                    <span>→</span> Weiter
+                    Weiter <span className="ml-2">→</span>
                   </button>
                 </div>
               </div>

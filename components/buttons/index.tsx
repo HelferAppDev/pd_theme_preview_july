@@ -15,6 +15,8 @@ export function ButtonWeiter({ onClick, disabled, className }: ButtonProps) {
     <ButtonBase
       variant="primary"
       icon={<MdArrowForward size={20} />}
+      iconPosition="right"
+      nav={true}
       onClick={onClick}
       disabled={disabled}
       className={className}
