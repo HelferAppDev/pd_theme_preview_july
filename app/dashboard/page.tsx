@@ -4,7 +4,7 @@ import { FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3 } from 'react-icons/
 
 export default function Dashboard() {
   return (
-    <main className="min-h-screen bg-white py-8 px-6">
+    <main className="min-h-screen bg-background py-8 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Welcome Section */}
           <div className="mb-12">
@@ -17,7 +17,7 @@ export default function Dashboard() {
         {/* Active Cards Section */}
         <div className="mb-12">
           <div className="mb-6">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 border-blue-600 pl-3">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
               Verfügbare Logopädie-Bausteine
             </h2>
           </div>
@@ -61,7 +61,7 @@ export default function Dashboard() {
         {/* Disabled Cards Section */}
         <div>
           <div className="mb-6">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 border-blue-600 pl-3">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-600 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-yellow)' }}>
               Noch gesperrte Bereiche
             </h2>
           </div>

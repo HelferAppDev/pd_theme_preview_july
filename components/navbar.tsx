@@ -37,7 +37,7 @@ export function Navbar() {
             href="/"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
@@ -50,7 +50,7 @@ export function Navbar() {
             href="/theme-preview"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/theme-preview')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
@@ -63,7 +63,7 @@ export function Navbar() {
             href="/dashboard"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/dashboard')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >

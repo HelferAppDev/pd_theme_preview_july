@@ -1,6 +1,6 @@
 export default function DesignSystem() {
   return (
-    <main className="w-full min-h-screen bg-white py-16 px-6">
+    <main className="w-full min-h-screen bg-background py-16 px-6">
       <div className="max-w-6xl mx-auto space-y-20">
 
         {/* Color System */}

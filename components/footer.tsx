@@ -8,7 +8,7 @@ export function Footer() {
   const version = '0.1.0';
 
   return (
-    <footer className="bg-white border-t border-gray-200 mt-auto">
+    <footer className="brand-accent-top bg-white mt-auto">
       <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Left: Impressum + Copyright */}

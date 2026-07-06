@@ -22,7 +22,7 @@ export default function ThemePreview() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Header */}
         <div className="text-center space-y-3 mb-12">
