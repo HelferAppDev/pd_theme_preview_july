@@ -267,9 +267,50 @@ export default function DesignSystem() {
             </div>
           </div>
 
-          {/* Card */}
+          {/* Category Cards */}
           <div className="space-y-4">
-            <h3>Card Component</h3>
+            <h3>Category Cards</h3>
+            <p className="text-gray-600 mb-6">Interactive category selection cards with hover and disabled states</p>
+            <div className="space-y-6">
+              {/* Active Cards */}
+              <div>
+                <p className="text-sm font-semibold text-gray-700 mb-4">Active States (Hover to see effect)</p>
+                <div className="flex flex-wrap gap-6">
+                  <div className="category-card">
+                    <div className="icon-wrapper">🎤</div>
+                    <div className="card-title">Aussprache</div>
+                  </div>
+                  <div className="category-card">
+                    <div className="icon-wrapper">📖</div>
+                    <div className="card-title">Lesen</div>
+                  </div>
+                  <div className="category-card">
+                    <div className="icon-wrapper">👂</div>
+                    <div className="card-title">Hörverstehen</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Disabled Cards */}
+              <div>
+                <p className="text-sm font-semibold text-gray-700 mb-4">Disabled States</p>
+                <div className="flex flex-wrap gap-6">
+                  <div className="category-card is-disabled">
+                    <div className="icon-wrapper">✍️</div>
+                    <div className="card-title">Schreiben</div>
+                  </div>
+                  <div className="category-card is-disabled">
+                    <div className="icon-wrapper">🎮</div>
+                    <div className="card-title">Spiele</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Content Card */}
+          <div className="space-y-4">
+            <h3>Content Card Component</h3>
             <div className="border-2 rounded-3xl p-6 space-y-4" style={{ borderColor: '#0075bf' }}>
               <h3 style={{ color: '#0075bf' }}>Ausspracheübung</h3>
               <p className="text-gray-600">Trainiere deine Aussprache mit interaktiven Übungen.</p>

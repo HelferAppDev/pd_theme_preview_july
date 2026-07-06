@@ -233,3 +233,55 @@ button, .button-label {
   transform: translateY(0);
   box-shadow: 0 3px 8px rgba(0, 117, 191, 0.2);
 }
+
+/* ===== CATEGORY CARD SYSTEM ===== */
+
+/* Base Category Card */
+.category-card {
+  width: 220px;
+  height: 200px;
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.category-card .icon-wrapper {
+  font-size: 48px;
+  color: var(--color-secondary-blue);
+}
+
+.category-card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Hover State */
+.category-card:hover:not(.is-disabled) {
+  border-color: var(--color-secondary-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 117, 191, 0.12);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+}
+
+/* Disabled State */
+.category-card.is-disabled {
+  background-color: var(--color-bg-disabled);
+  border-color: #CBD5E1;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.category-card.is-disabled .icon-wrapper,
+.category-card.is-disabled .card-title {
+  color: var(--color-text-disabled);
+}
