@@ -215,7 +215,6 @@ export default function ThemePreview() {
             </div>
           </div>
         </section>
-        </div>
       </div>
     </div>
   );
