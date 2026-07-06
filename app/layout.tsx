@@ -11,7 +11,7 @@ const firaSans = Fira_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Logopädie-Trainer",
+  title: "Font und Buttons",
   description: "Speech therapy training application",
 };
 

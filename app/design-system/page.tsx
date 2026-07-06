@@ -133,7 +133,7 @@ export default function DesignSystem() {
                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">H1 - Screen Title</p>
                 <p className="text-sm text-gray-600">Bold (700) • 32px/2rem • Line-height 1.2</p>
               </div>
-              <h1>Willkommen im Logopädie-Trainer</h1>
+              <h1>Willkommen zu Font und Buttons</h1>
             </div>
 
             {/* H2 */}

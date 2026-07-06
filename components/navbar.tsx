@@ -13,7 +13,7 @@ export function Navbar() {
   const getTitleForPath = (path: string) => {
     switch (path) {
       case '/':
-        return 'Logopädie-Trainer';
+        return 'Font und Buttons';
       case '/theme-preview':
         return 'Theme Preview';
       case '/dashboard':
@@ -23,7 +23,7 @@ export function Navbar() {
       case '/impressum':
         return 'Impressum';
       default:
-        return 'Logopädie-Trainer';
+        return 'Font und Buttons';
     }
   };
 
@@ -41,7 +41,7 @@ export function Navbar() {
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
-            Logopädie-Trainer
+            Font und Buttons
           </Link>
 
           <span className="text-gray-300 mx-1">—</span>
