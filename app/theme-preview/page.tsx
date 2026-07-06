@@ -214,7 +214,10 @@ export default function ThemePreview() {
                 <p className="font-semibold text-gray-800">Disabled State</p>
                 <p className="text-sm text-gray-600">#E2E8F0</p>
                 <p className="text-xs text-gray-500 mt-1">Text: #94A3B8 (Light)</p>
+              </div>
+            </div>
           </div>
+        </section>
         </div>
       </div>
     </>
