@@ -108,15 +108,15 @@ export default function Home() {
         <div className="space-y-1">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Example: Feedback Correct Answer</p>
         </div>
-        <div className="border rounded-lg p-6 space-y-4 bg-green-50 border-green-200">
+        <div className="border rounded-lg p-6 space-y-4" style={{ backgroundColor: 'rgba(187, 207, 1, 0.05)', borderColor: 'var(--color-secondary-green)' }}>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">✓</div>
-            <h2 className="text-green-700">Sehr gut gemacht!</h2>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold" style={{ backgroundColor: 'var(--color-secondary-green)' }}>✓</div>
+            <h2 style={{ color: 'var(--color-secondary-green)' }}>Sehr gut gemacht!</h2>
           </div>
           <p className="text-gray-700">Deine Aussprache war korrekt. Du hast den Zielaut richtig gesprochen.</p>
-          <div className="bg-white p-4 rounded border-l-4 border-green-500">
+          <div className="bg-white p-4 rounded border-l-4" style={{ borderColor: 'var(--color-secondary-green)' }}>
             <p className="text-sm text-gray-600 mb-2">Deine Antwort:</p>
-            <div className="therapy-big text-green-600">
+            <div className="therapy-big" style={{ color: 'var(--color-secondary-green)' }}>
               Sonne
             </div>
           </div>
@@ -132,15 +132,15 @@ export default function Home() {
         <div className="space-y-1">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Example: Feedback Wrong Answer</p>
         </div>
-        <div className="border rounded-lg p-6 space-y-4 bg-red-50 border-red-200">
+        <div className="border rounded-lg p-6 space-y-4" style={{ backgroundColor: 'rgba(234, 114, 4, 0.05)', borderColor: 'var(--color-error-orange)' }}>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold">✗</div>
-            <h2 className="text-red-700">Das war nicht ganz richtig.</h2>
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold" style={{ backgroundColor: 'var(--color-error-orange)' }}>✗</div>
+            <h2 style={{ color: 'var(--color-error-orange)' }}>Das war nicht ganz richtig.</h2>
           </div>
           <p className="text-gray-700">Versuche, den Zielaut deutlicher auszusprechen. Höre dir die Beispiel-Aussprache an.</p>
-          <div className="bg-white p-4 rounded border-l-4 border-red-500">
+          <div className="bg-white p-4 rounded border-l-4" style={{ borderColor: 'var(--color-error-orange)' }}>
             <p className="text-sm text-gray-600 mb-2">Zielwort:</p>
-            <div className="therapy-big text-red-600">
+            <div className="therapy-big" style={{ color: 'var(--color-error-orange)' }}>
               Sonne
             </div>
           </div>
