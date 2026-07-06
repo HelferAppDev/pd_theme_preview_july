@@ -51,7 +51,7 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
             {title}
           </h1>
 
-          {/* Right: Icon Buttons + Mice */}
+          {/* Right: Icon Buttons */}
           <div className="flex items-center gap-3 flex-1 justify-end">
             {/* Setup Button */}
             <button
@@ -68,17 +68,6 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
             >
               <FiHelpCircle size={24} color="var(--color-secondary-blue)" />
             </button>
-
-            {/* Mice Logo */}
-            <div className="flex-shrink-0 ml-2">
-              <Image
-                src="/prolog-mice.svg"
-                alt="proLog Digital Mäuse"
-                width={40}
-                height={20}
-                priority
-              />
-            </div>
           </div>
         </div>
       </div>
