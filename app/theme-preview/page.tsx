@@ -1,7 +1,7 @@
 'use client';
 
 import { MdArrowForward, MdClose, MdRefresh, MdSkipNext } from 'react-icons/md';
-import { FiHelpCircle, FiCompass, FiPin, FiCpu, FiMessageSquare, FiLogIn } from 'react-icons/fi';
+import { FiHelpCircle, FiCompass, FiMapPin, FiCpu, FiMessageSquare, FiLogIn } from 'react-icons/fi';
 import { LuBrainCircuit } from 'react-icons/lu';
 import {
   ButtonWeiter,
@@ -18,7 +18,7 @@ export default function ThemePreview() {
     { icon: <FiCompass size={48} />, title: 'Raumkognition', disabled: false },
     { icon: <FiMessageSquare size={48} />, title: 'Sprache', disabled: true },
     { icon: <LuBrainCircuit size={48} />, title: 'Gedächtnis', disabled: false },
-    { icon: <FiPin size={48} />, title: 'Motorik', disabled: false },
+    { icon: <FiMapPin size={48} />, title: 'Motorik', disabled: false },
     { icon: <FiCpu size={48} />, title: 'Kognition', disabled: true },
   ];
 
