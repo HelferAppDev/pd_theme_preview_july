@@ -37,10 +37,10 @@ export function PageHeader({ title, showBackButton = true }: PageHeaderProps) {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/logo-prolog-digital.svg"
+                src="/logo-prolog-digital.png"
                 alt="proLog Digital Logo"
                 width={160}
-                height={35}
+                height={40}
                 priority
               />
             </Link>
