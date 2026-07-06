@@ -1,5 +1,6 @@
 'use client';
 
+import { PageHeader } from '@/components/page-header';
 import { MdArrowForward, MdClose, MdRefresh, MdSkipNext } from 'react-icons/md';
 import { FiHelpCircle, FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3, FiLogIn } from 'react-icons/fi';
 import {
@@ -22,11 +23,12 @@ export default function ThemePreview() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-6">
-      <div className="max-w-6xl mx-auto space-y-16">
-        {/* Header */}
-        <div className="text-center space-y-3">
-          <h1>Logopädie-Trainer Design System</h1>
+    <>
+      <PageHeader title="Theme Preview" />
+      <div className="w-full min-h-screen bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          {/* Header */}
+          <div className="text-center space-y-3">
           <p className="text-lg text-gray-600">
             Complete UI Component Preview
           </p>
@@ -212,135 +214,9 @@ export default function ThemePreview() {
                 <p className="font-semibold text-gray-800">Disabled State</p>
                 <p className="text-sm text-gray-600">#E2E8F0</p>
                 <p className="text-xs text-gray-500 mt-1">Text: #94A3B8 (Light)</p>
-              </div>
-            </div>
           </div>
-        </section>
-
-        {/* Typography System */}
-        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <div>
-            <h2>Typography System</h2>
-            <p className="text-gray-600 mt-2">
-              Fira Sans with semantic hierarchy
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {/* H1 */}
-            <div className="space-y-2">
-              <h1>H1 - Screen Title (Bold, 32px)</h1>
-              <p className="text-sm text-gray-500">Font Weight: 700 | Line Height: 1.2</p>
-            </div>
-
-            {/* H2 */}
-            <div className="space-y-2">
-              <h2>H2 - Section Title (SemiBold, 24px)</h2>
-              <p className="text-sm text-gray-500">Font Weight: 600 | Line Height: 1.3</p>
-            </div>
-
-            {/* H3 */}
-            <div className="space-y-2">
-              <h3>H3 - Card Title (Medium, 18px)</h3>
-              <p className="text-sm text-gray-500">Font Weight: 500 | Line Height: 1.4</p>
-            </div>
-
-            {/* Body */}
-            <div className="space-y-2">
-              <p>
-                Body Text (Regular, 16px) - Dies ist ein Beispiel für normalen Body-Text. 
-                Er wird für Erklärungen, Übungsanleitungen und Hilfetexte verwendet.
-              </p>
-              <p className="text-sm text-gray-500">Font Weight: 400 | Line Height: 1.6</p>
-            </div>
-
-            {/* Therapy Big */}
-            <div className="space-y-2">
-              <div className="therapy-big text-blue-600">
-                Therapy Big Text (36-48px)
-              </div>
-              <p className="text-sm text-gray-500">Font Weight: 600 | Line Height: 1.2</p>
-              <p className="text-gray-600">Für Reizelemente in Sprachspielen – Zielwörter und Silben</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Design Tokens */}
-        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <div>
-            <h2>Design Tokens</h2>
-            <p className="text-gray-600 mt-2">
-              Consistent spacing, radius, and transitions
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <p className="font-semibold text-gray-800">Border Radius</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Button: 12px (--radius-button)</li>
-                <li>Card: 20px (--radius-card)</li>
-              </ul>
-            </div>
-
-            <div className="space-y-2">
-              <p className="font-semibold text-gray-800">Transitions</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Smooth: all 0.2s ease-in-out (--transition-smooth)</li>
-              </ul>
-            </div>
-
-            <div className="space-y-2">
-              <p className="font-semibold text-gray-800">Button Specs</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Height: 48px</li>
-                <li>Padding: 0 24px</li>
-                <li>Icon-Text Gap: 10px</li>
-              </ul>
-            </div>
-
-            <div className="space-y-2">
-              <p className="font-semibold text-gray-800">Card Specs</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>Size: 220px × 200px</li>
-                <li>Border: 2px solid</li>
-                <li>Icon Size: 48px</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Usage Example */}
-        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <div>
-            <h2>Usage Example</h2>
-            <p className="text-gray-600 mt-2">
-              Real-world component composition
-            </p>
-          </div>
-
-          <div className="border-2 border-blue-200 rounded-2xl p-8 bg-blue-50 space-y-6">
-            <div>
-              <h3 className="mb-2">Ausspracheübung</h3>
-              <p className="text-gray-700 mb-6">
-                Sprich das Wort deutlich aus und vergleiche deine Aussprache.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl border-2 border-blue-300 text-center">
-              <p className="text-sm text-gray-600 mb-3">Zielwort:</p>
-              <div className="therapy-big text-blue-600 mb-4">Sonne</div>
-              <p className="text-sm text-gray-600">Höre dir das Wort an</p>
-            </div>
-
-            <div className="flex gap-3 flex-wrap justify-center">
-              <ButtonWeiter onClick={() => console.log('Continue')} />
-              <ButtonÜberspringen onClick={() => console.log('Skip')} />
-              <ButtonHilfe onClick={() => console.log('Help')} />
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

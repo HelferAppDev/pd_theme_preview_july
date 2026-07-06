@@ -1,14 +1,17 @@
 'use client';
 
+import { PageHeader } from '@/components/page-header';
 import { FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3 } from 'react-icons/fi';
 
 export default function Dashboard() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Moin Max!</h1>
+    <>
+      <PageHeader title="Dashboard" />
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Welcome Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Moin Max!</h3>
           <p className="text-lg text-gray-600">
             Wähle einen Fachbereich aus, um dein heutiges Sprachtraining zu starten.
           </p>
@@ -77,7 +80,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

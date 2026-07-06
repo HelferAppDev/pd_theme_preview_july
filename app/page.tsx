@@ -1,5 +1,6 @@
 'use client';
 
+import { PageHeader } from '@/components/page-header';
 import {
   ButtonWeiter,
   ButtonÜberspringen,
@@ -11,12 +12,9 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-full max-w-4xl mx-auto py-16 px-6 space-y-16">
-      {/* Header */}
-      <div className="space-y-2">
-        <h1>Logopädie-Trainer</h1>
-        <p className="text-gray-600">Typography System Showcase</p>
-      </div>
+    <>
+      <PageHeader title="Logopädie-Trainer" showBackButton={false} />
+      <main className="w-full max-w-4xl mx-auto py-16 px-6 space-y-16">
 
       {/* H1 - Screen Title */}
       <section className="space-y-4">
@@ -106,5 +104,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
   );
 }

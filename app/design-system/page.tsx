@@ -1,12 +1,11 @@
+import { PageHeader } from '@/components/page-header';
+
 export default function DesignSystem() {
   return (
-    <main className="w-full min-h-screen bg-white py-16 px-6">
-      <div className="max-w-6xl mx-auto space-y-20">
-        {/* Header */}
-        <div className="space-y-4">
-          <h1>Design System</h1>
-          <p className="text-lg text-gray-600">Logopädie-Trainer - Complete Design Guide</p>
-        </div>
+    <>
+      <PageHeader title="Design System" />
+      <main className="w-full min-h-screen bg-white py-16 px-6">
+        <div className="max-w-6xl mx-auto space-y-20">
 
         {/* Color System */}
         <section className="space-y-8">
@@ -391,7 +390,8 @@ export default function DesignSystem() {
             </div>
           </div>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 }
