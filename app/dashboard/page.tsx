@@ -1,13 +1,10 @@
 'use client';
 
-import { PageHeader } from '@/components/page-header';
 import { FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3 } from 'react-icons/fi';
 
 export default function Dashboard() {
   return (
-    <>
-      <PageHeader title="Dashboard" />
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-6">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Welcome Section */}
           <div className="mb-12">
@@ -82,6 +79,5 @@ export default function Dashboard() {
         </div>
         </div>
       </main>
-    </>
   );
 }

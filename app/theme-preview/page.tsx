@@ -1,6 +1,5 @@
 'use client';
 
-import { PageHeader } from '@/components/page-header';
 import { MdArrowForward, MdClose, MdRefresh, MdSkipNext } from 'react-icons/md';
 import { FiHelpCircle, FiMic, FiHeadphones, FiBookOpen, FiLayers, FiEdit3, FiLogIn } from 'react-icons/fi';
 import {
@@ -23,12 +22,10 @@ export default function ThemePreview() {
   ];
 
   return (
-    <>
-      <PageHeader title="Theme Preview" />
-      <div className="w-full min-h-screen bg-white">
-        <div className="max-w-7xl mx-auto px-6 py-16">
-          {/* Header */}
-          <div className="text-center space-y-3">
+    <div className="w-full min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        {/* Header */}
+        <div className="text-center space-y-3">
           <p className="text-lg text-gray-600">
             Complete UI Component Preview
           </p>
@@ -220,6 +217,6 @@ export default function ThemePreview() {
         </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }

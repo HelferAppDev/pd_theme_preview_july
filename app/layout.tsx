@@ -26,7 +26,9 @@ export default function RootLayout({
       className={`${firaSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <Navbar />
+        <div className="sticky top-0 z-50">
+          <Navbar />
+        </div>
         {children}
         <Footer />
       </body>

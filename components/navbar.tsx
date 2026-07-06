@@ -2,14 +2,35 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { PageHeader } from './page-header';
 
 export function Navbar() {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path || (path === '/' && pathname === '/');
 
+  // Map pathname to title for PageHeader
+  const getTitleForPath = (path: string) => {
+    switch (path) {
+      case '/':
+        return 'Logopädie-Trainer';
+      case '/theme-preview':
+        return 'Theme Preview';
+      case '/dashboard':
+        return 'Dashboard';
+      case '/design-system':
+        return 'Design System';
+      case '/impressum':
+        return 'Impressum';
+      default:
+        return 'Logopädie-Trainer';
+    }
+  };
+
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-40">
+    <>
+      <PageHeader title={getTitleForPath(pathname)} showBackButton={pathname !== '/'} />
+      <nav className="bg-white border-b border-gray-200">
       <div className="w-full max-w-7xl mx-auto px-6 py-3">
         <div className="flex items-center gap-1">
           <Link
@@ -51,5 +72,6 @@ export function Navbar() {
         </div>
       </div>
     </nav>
+    </>
   );
 }

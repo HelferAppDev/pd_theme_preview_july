@@ -1,12 +1,8 @@
 'use client';
 
-import { PageHeader } from '@/components/page-header';
-
 export default function Impressum() {
   return (
-    <>
-      <PageHeader title="Impressum" />
-      <main className="w-full max-w-4xl mx-auto py-16 px-6 space-y-8">
+    <main className="w-full max-w-4xl mx-auto py-16 px-6 space-y-8">
         <section className="space-y-4">
           <h2>Impressum</h2>
           <p className="text-gray-600">
@@ -53,6 +49,5 @@ export default function Impressum() {
           </p>
         </section>
       </main>
-    </>
   );
 }
