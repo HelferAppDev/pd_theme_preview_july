@@ -3,13 +3,52 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary Colors */
+  --color-primary-yellow: #fff041;
+  --color-primary-yellow-text: #1E293B;
+  
+  /* Secondary Colors */
+  --color-secondary-green: #bbcf01;
+  --color-secondary-green-text: #1E293B;
+  --color-secondary-blue: #0075bf;
+  --color-secondary-blue-text: #FFFFFF;
+  
+  /* Accent Colors */
+  --color-accent-violet: #b71570;
+  --color-accent-violet-text: #FFFFFF;
+  --color-error-orange: #ea7204;
+  --color-error-orange-text: #FFFFFF;
+  
+  /* Neutral Colors */
+  --color-text-dark: #1E293B;
+  --color-text-light: #FFFFFF;
+  --color-bg-disabled: #E2E8F0;
+  --color-text-disabled: #94A3B8;
+  
+  /* Spacing & Visual Tokens */
+  --radius-button: 12px;
+  --radius-card: 20px;
+  --transition-smooth: all 0.2s ease-in-out;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-fira-sans);
+  
+  /* Primary Colors */
+  --color-primary-yellow: var(--color-primary-yellow);
+  --color-secondary-green: var(--color-secondary-green);
+  --color-secondary-blue: var(--color-secondary-blue);
+  --color-accent-violet: var(--color-accent-violet);
+  --color-error-orange: var(--color-error-orange);
+  
+  /* Neutral Colors */
+  --color-text-dark: var(--color-text-dark);
+  --color-text-light: var(--color-text-light);
+  --color-bg-disabled: var(--color-bg-disabled);
+  --color-text-disabled: var(--color-text-disabled);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +61,298 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* H1 - Screen Title: Bold (700), 32px/2rem, line-height 1.2 */
+h1, .h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* H2 - Section Title: SemiBold (600), 24px/1.5rem, line-height 1.3 */
+h2, .h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+/* H3 - Card Title: Medium (500), 18px/1.125rem, line-height 1.4 */
+h3, .h3 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+/* Body Text: Regular (400), 16px/1rem, line-height 1.6 */
+p, body, .body {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Therapy Big Text: SemiBold (600), 36-48px, line-height 1.2 */
+.therapy-big {
+  font-weight: 600;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  line-height: 1.2;
+}
+
+/* Button Label: Medium (500), 16px/1rem, line-height 1.0 */
+button, .button-label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ===== THERAPY BUTTON SYSTEM ===== */
+
+/* Base Button Styles */
+.btn-therapy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 24px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-therapy:disabled {
+  background-color: var(--color-bg-disabled);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Primary Button: Weiter (Yellow) */
+.btn-weiter {
+  background-color: var(--color-primary-yellow);
+  color: var(--color-text-dark);
+}
+
+.btn-weiter:hover:not(:disabled) {
+  background-color: #F2E32C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 240, 65, 0.35);
+}
+
+.btn-weiter:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(255, 240, 65, 0.2);
+}
+
+/* Secondary Button: Überspringen (Blue) */
+.btn-überspringen {
+  background-color: var(--color-secondary-blue);
+  color: var(--color-text-light);
+}
+
+.btn-überspringen:hover:not(:disabled) {
+  background-color: #0063A0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 117, 191, 0.3);
+}
+
+.btn-überspringen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 117, 191, 0.2);
+}
+
+/* Help Button: Hilfe (Violet) */
+.btn-hilfe {
+  background-color: var(--color-accent-violet);
+  color: var(--color-text-light);
+}
+
+.btn-hilfe:hover:not(:disabled) {
+  background-color: #9B0F5D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(183, 21, 112, 0.3);
+}
+
+.btn-hilfe:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(183, 21, 112, 0.2);
+}
+
+/* Close Button: Schließen (Orange) */
+.btn-schliessen {
+  background-color: var(--color-error-orange);
+  color: var(--color-text-light);
+}
+
+.btn-schliessen:hover:not(:disabled) {
+  background-color: #D36402;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(234, 114, 4, 0.3);
+}
+
+.btn-schliessen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(234, 114, 4, 0.2);
+}
+
+/* Repeat Button: Wiederholen (Green) */
+.btn-wiederholen {
+  background-color: var(--color-secondary-green);
+  color: var(--color-text-dark);
+}
+
+.btn-wiederholen:hover:not(:disabled) {
+  background-color: #A8BB00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(187, 207, 1, 0.3);
+}
+
+.btn-wiederholen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(187, 207, 1, 0.2);
+}
+
+/* Login Button: Anmelden (Blue - System Navigation) */
+.btn-anmelden {
+  background-color: var(--color-secondary-blue);
+  color: var(--color-text-light);
+}
+
+.btn-anmelden:hover:not(:disabled) {
+  background-color: #0063A0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 117, 191, 0.3);
+}
+
+.btn-anmelden:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 117, 191, 0.2);
+}
+
+/* ===== CATEGORY CARD SYSTEM ===== */
+
+/* Base Category Card */
+.category-card {
+  width: 220px;
+  height: 200px;
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.category-card .icon-wrapper {
+  font-size: 48px;
+  color: var(--color-secondary-blue);
+}
+
+.category-card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Hover State */
+.category-card:hover:not(.is-disabled) {
+  border-color: var(--color-secondary-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 117, 191, 0.12);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+}
+
+/* Disabled State */
+.category-card.is-disabled {
+  background-color: var(--color-bg-disabled);
+  border-color: #CBD5E1;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.category-card.is-disabled .icon-wrapper,
+.category-card.is-disabled .card-title {
+  color: var(--color-text-disabled);
+}
+
+/* ===== THERAPY CARD SYSTEM (Dashboard) ===== */
+
+/* Base Therapy Card */
+.therapy-card {
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(30, 41, 59, 0.02);
+}
+
+.therapy-card .card-icon {
+  font-size: 44px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+  color: var(--color-secondary-blue);
+}
+
+.therapy-card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Color variants for icons */
+.therapy-card.c-green .card-icon { color: var(--color-secondary-green); }
+.therapy-card.c-blue .card-icon { color: var(--color-secondary-blue); }
+.therapy-card.c-violet .card-icon { color: var(--color-accent-violet); }
+.therapy-card.c-yellow .card-icon { color: var(--color-primary-yellow); }
+
+/* Hover state */
+.therapy-card:hover:not(.is-disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px -5px rgba(30, 41, 59, 0.08);
+}
+
+.therapy-card:hover:not(.is-disabled) .card-icon {
+  transform: scale(1.1);
+}
+
+/* Dynamic border color on hover per category */
+.therapy-card.artikulation:hover { border-color: var(--color-secondary-green); }
+.therapy-card.verstehen:hover { border-color: var(--color-secondary-blue); }
+.therapy-card.wortschatz:hover { border-color: var(--color-accent-violet); }
+.therapy-card.grammatik:hover { border-color: var(--color-secondary-blue); }
+.therapy-card.schrift:hover { border-color: var(--color-primary-yellow); }
+
+/* Disabled state */
+.therapy-card.is-disabled {
+  background-color: var(--color-bg-disabled);
+  border-color: var(--color-bg-disabled);
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.therapy-card.is-disabled .card-icon,
+.therapy-card.is-disabled .card-title {
+  color: var(--color-text-disabled);
 }
