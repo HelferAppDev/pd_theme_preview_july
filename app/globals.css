@@ -30,6 +30,20 @@
   --radius-button: 12px;
   --radius-card: 20px;
   --transition-smooth: all 0.2s ease-in-out;
+  
+  /* Screen Spacing */
+  --space-page-padding-x: 1.5rem;    /* px-6 */
+  --space-page-padding-y: 4rem;      /* py-16 */
+  --space-section-padding: 2rem;     /* p-8 */
+  --space-navbar-padding-y: 0.75rem; /* py-3 */
+  --space-footer-padding-y: 1.25rem; /* py-5 */
+  
+  /* Component Spacing */
+  --space-gap-default: 1.5rem;       /* gap-6 */
+  --space-gap-compact: 1rem;         /* gap-4 */
+  --space-gap-tight: 0.75rem;        /* gap-3 */
+  --space-margin-bottom-section: 2rem;     /* mb-8 */
+  --space-margin-bottom-large: 3rem;       /* mb-12 */
 }
 
 @theme inline {
