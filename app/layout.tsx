@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fira_Sans } from "next/font/google";
+import { Navbar } from "@/components/navbar";
 import "./globals.css";
 
 const firaSans = Fira_Sans({
@@ -23,7 +24,10 @@ export default function RootLayout({
       lang="de"
       className={`${firaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
