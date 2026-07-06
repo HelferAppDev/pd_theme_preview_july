@@ -1,3 +1,14 @@
+'use client';
+
+import {
+  ButtonWeiter,
+  ButtonÜberspringen,
+  ButtonHilfe,
+  ButtonSchließen,
+  ButtonWiederholen,
+  ButtonAnmelden,
+} from '@/components/buttons';
+
 export default function Home() {
   return (
     <main className="w-full max-w-4xl mx-auto py-16 px-6 space-y-16">
@@ -58,22 +69,19 @@ export default function Home() {
         <p className="text-gray-600">Wird für Reizelemente in Sprachspielen verwendet – Zielwörter, Silben und andere fokussierte Inhalte.</p>
       </section>
 
-      {/* Button Label */}
+      {/* Button Label - Component Showcase */}
       <section className="space-y-4">
         <div className="space-y-1">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Button Label</p>
-          <p className="text-sm text-gray-500">Medium (500), 16px/1rem, line-height 1.0</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Button Components</p>
+          <p className="text-sm text-gray-500">Complete button system with icons and colors</p>
         </div>
         <div className="flex gap-3 flex-wrap">
-          <button className="button-label px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-            Übung starten
-          </button>
-          <button className="button-label px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors">
-            Abbrechen
-          </button>
-          <button className="button-label px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
-            Fertig
-          </button>
+          <ButtonWeiter />
+          <ButtonÜberspringen />
+          <ButtonHilfe />
+          <ButtonSchließen />
+          <ButtonWiederholen />
+          <ButtonAnmelden />
         </div>
       </section>
 
@@ -92,9 +100,9 @@ export default function Home() {
               Sonne
             </div>
           </div>
-          <button className="button-label px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-            Übung beginnen
-          </button>
+          <ButtonWeiter />
+          <ButtonÜberspringen />
+          <ButtonHilfe />
         </div>
       </section>
     </main>

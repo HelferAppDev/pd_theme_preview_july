@@ -204,22 +204,66 @@ export default function DesignSystem() {
           {/* Buttons */}
           <div className="space-y-4">
             <h3>Buttons</h3>
-            <div className="flex flex-wrap gap-4">
-              <button className="button-label px-6 py-3 text-gray-900 rounded-lg font-medium transition-colors" style={{ backgroundColor: '#fff041' }}>
-                Primary Yellow
-              </button>
-              <button className="button-label px-6 py-3 text-gray-900 rounded-lg font-medium transition-colors" style={{ backgroundColor: '#bbcf01' }}>
-                Secondary Green
-              </button>
-              <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors" style={{ backgroundColor: '#0075bf' }}>
-                Secondary Blue
-              </button>
-              <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors" style={{ backgroundColor: '#b71570' }}>
-                Accent Violet
-              </button>
-              <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors" style={{ backgroundColor: '#ea7204' }}>
-                Error Orange
-              </button>
+            <div className="space-y-6">
+              {/* Primary Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Weiter (Primary CTA)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-gray-900 rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#fff041' }}>
+                    <span>→</span> Weiter
+                  </button>
+                </div>
+              </div>
+
+              {/* Secondary Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Überspringen (Secondary Action)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#0075bf' }}>
+                    <span>⇉</span> Überspringen
+                  </button>
+                </div>
+              </div>
+
+              {/* Help Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Hilfe (Support / Info)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#b71570' }}>
+                    <span>?</span> Hilfe
+                  </button>
+                </div>
+              </div>
+
+              {/* Close Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Schließen (Cancel / Dismiss)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#ea7204' }}>
+                    <span>✕</span> Schließen
+                  </button>
+                </div>
+              </div>
+
+              {/* Repeat Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Wiederholen (Positive Re-Action)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-gray-900 rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#bbcf01' }}>
+                    <span>↻</span> Wiederholen
+                  </button>
+                </div>
+              </div>
+
+              {/* Login Button */}
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-700">Anmelden (System Navigation)</p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="button-label px-6 py-3 text-white rounded-lg font-medium transition-colors flex items-center gap-2" style={{ backgroundColor: '#0075bf' }}>
+                    <span>⇱</span> Anmelden
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
