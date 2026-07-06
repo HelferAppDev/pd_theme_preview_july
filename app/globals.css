@@ -3,12 +3,52 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary Colors */
+  --color-primary-yellow: #fff041;
+  --color-primary-yellow-text: #1E293B;
+  
+  /* Secondary Colors */
+  --color-secondary-green: #bbcf01;
+  --color-secondary-green-text: #1E293B;
+  --color-secondary-blue: #0075bf;
+  --color-secondary-blue-text: #FFFFFF;
+  
+  /* Accent Colors */
+  --color-accent-violet: #b71570;
+  --color-accent-violet-text: #FFFFFF;
+  --color-error-orange: #ea7204;
+  --color-error-orange-text: #FFFFFF;
+  
+  /* Neutral Colors */
+  --color-text-dark: #1E293B;
+  --color-text-light: #FFFFFF;
+  --color-bg-disabled: #E2E8F0;
+  --color-text-disabled: #94A3B8;
+  
+  /* Spacing & Visual Tokens */
+  --radius-button: 12px;
+  --radius-card: 20px;
+  --transition-smooth: all 0.2s ease-in-out;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-fira-sans);
+  
+  /* Primary Colors */
+  --color-primary-yellow: var(--color-primary-yellow);
+  --color-secondary-green: var(--color-secondary-green);
+  --color-secondary-blue: var(--color-secondary-blue);
+  --color-accent-violet: var(--color-accent-violet);
+  --color-error-orange: var(--color-error-orange);
+  
+  /* Neutral Colors */
+  --color-text-dark: var(--color-text-dark);
+  --color-text-light: var(--color-text-light);
+  --color-bg-disabled: var(--color-bg-disabled);
+  --color-text-disabled: var(--color-text-disabled);
 }
 
 @media (prefers-color-scheme: dark) {
