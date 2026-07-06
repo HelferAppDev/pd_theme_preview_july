@@ -104,3 +104,132 @@ button, .button-label {
   font-size: 1rem;
   line-height: 1;
 }
+
+/* ===== THERAPY BUTTON SYSTEM ===== */
+
+/* Base Button Styles */
+.btn-therapy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 24px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-therapy:disabled {
+  background-color: var(--color-bg-disabled);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Primary Button: Weiter (Yellow) */
+.btn-weiter {
+  background-color: var(--color-primary-yellow);
+  color: var(--color-text-dark);
+}
+
+.btn-weiter:hover:not(:disabled) {
+  background-color: #F2E32C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 240, 65, 0.35);
+}
+
+.btn-weiter:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(255, 240, 65, 0.2);
+}
+
+/* Secondary Button: Überspringen (Blue) */
+.btn-überspringen {
+  background-color: var(--color-secondary-blue);
+  color: var(--color-text-light);
+}
+
+.btn-überspringen:hover:not(:disabled) {
+  background-color: #0063A0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 117, 191, 0.3);
+}
+
+.btn-überspringen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 117, 191, 0.2);
+}
+
+/* Help Button: Hilfe (Violet) */
+.btn-hilfe {
+  background-color: var(--color-accent-violet);
+  color: var(--color-text-light);
+}
+
+.btn-hilfe:hover:not(:disabled) {
+  background-color: #9B0F5D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(183, 21, 112, 0.3);
+}
+
+.btn-hilfe:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(183, 21, 112, 0.2);
+}
+
+/* Close Button: Schließen (Orange) */
+.btn-schliessen {
+  background-color: var(--color-error-orange);
+  color: var(--color-text-light);
+}
+
+.btn-schliessen:hover:not(:disabled) {
+  background-color: #D36402;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(234, 114, 4, 0.3);
+}
+
+.btn-schliessen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(234, 114, 4, 0.2);
+}
+
+/* Repeat Button: Wiederholen (Green) */
+.btn-wiederholen {
+  background-color: var(--color-secondary-green);
+  color: var(--color-text-dark);
+}
+
+.btn-wiederholen:hover:not(:disabled) {
+  background-color: #A8BB00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(187, 207, 1, 0.3);
+}
+
+.btn-wiederholen:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(187, 207, 1, 0.2);
+}
+
+/* Login Button: Anmelden (Blue - System Navigation) */
+.btn-anmelden {
+  background-color: var(--color-secondary-blue);
+  color: var(--color-text-light);
+}
+
+.btn-anmelden:hover:not(:disabled) {
+  background-color: #0063A0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 117, 191, 0.3);
+}
+
+.btn-anmelden:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 117, 191, 0.2);
+}
