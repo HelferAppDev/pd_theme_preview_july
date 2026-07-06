@@ -12,10 +12,10 @@ export default function Dashboard() {
           {/* Welcome Section */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">Moin Max!</h3>
-          <p className="text-lg text-gray-600">
-            Wähle einen Fachbereich aus, um dein heutiges Sprachtraining zu starten.
-          </p>
-        </div>
+            <p className="text-lg text-gray-600">
+              Wähle einen Fachbereich aus, um dein heutiges Sprachtraining zu starten.
+            </p>
+          </div>
 
         {/* Active Cards Section */}
         <div className="mb-12">
@@ -79,6 +79,7 @@ export default function Dashboard() {
               <div className="card-title">Schriftsprache</div>
             </div>
           </div>
+        </div>
         </div>
       </main>
     </>
