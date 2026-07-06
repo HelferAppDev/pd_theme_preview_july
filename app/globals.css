@@ -42,6 +42,7 @@
   --space-gap-default: 1.5rem;       /* gap-6 */
   --space-gap-compact: 1rem;         /* gap-4 */
   --space-gap-tight: 0.75rem;        /* gap-3 */
+  --space-gap-buttons: 1rem;         /* gap between buttons */
   --space-margin-bottom-section: 1.5rem;   /* mb-6 */
   --space-margin-bottom-large: 3rem;       /* mb-12 */
 }
@@ -120,6 +121,13 @@ button, .button-label {
 }
 
 /* ===== THERAPY BUTTON SYSTEM ===== */
+
+/* Button Group Container */
+.button-group {
+  display: flex;
+  gap: var(--space-gap-buttons);
+  flex-wrap: wrap;
+}
 
 /* Base Button Styles */
 .btn-therapy {

@@ -70,7 +70,7 @@ export default function Home() {
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Button Components</p>
           <p className="text-sm text-gray-500">Complete button system with icons and colors</p>
         </div>
-        <div className="flex gap-3 flex-wrap">
+        <div className="button-group">
           <ButtonWeiter />
           <ButtonÜberspringen />
           <ButtonHilfe />
@@ -95,9 +95,11 @@ export default function Home() {
               Sonne
             </div>
           </div>
-          <ButtonWeiter />
-          <ButtonÜberspringen />
-          <ButtonHilfe />
+          <div className="button-group">
+            <ButtonWeiter />
+            <ButtonÜberspringen />
+            <ButtonHilfe />
+          </div>
         </div>
       </section>
 
@@ -118,8 +120,10 @@ export default function Home() {
               Sonne
             </div>
           </div>
-          <ButtonWeiter />
-          <ButtonWiederholen />
+          <div className="button-group">
+            <ButtonWeiter />
+            <ButtonWiederholen />
+          </div>
         </div>
       </section>
 
@@ -140,9 +144,11 @@ export default function Home() {
               Sonne
             </div>
           </div>
-          <ButtonWeiter />
-          <ButtonWiederholen />
-          <ButtonHilfe />
+          <div className="button-group">
+            <ButtonWeiter />
+            <ButtonWiederholen />
+            <ButtonHilfe />
+          </div>
         </div>
       </section>
     </main>
