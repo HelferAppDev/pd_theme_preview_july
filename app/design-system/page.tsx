@@ -1,6 +1,6 @@
 export default function DesignSystem() {
   return (
-    <main className="w-full min-h-screen bg-white py-16 px-6">
+    <main className="w-full min-h-screen bg-background py-16 px-6">
       <div className="max-w-6xl mx-auto space-y-20">
 
         {/* Color System */}
@@ -133,7 +133,7 @@ export default function DesignSystem() {
                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">H1 - Screen Title</p>
                 <p className="text-sm text-gray-600">Bold (700) • 32px/2rem • Line-height 1.2</p>
               </div>
-              <h1>Willkommen im Logopädie-Trainer</h1>
+              <h1>Willkommen zu Font und Buttons</h1>
             </div>
 
             {/* H2 */}

@@ -22,10 +22,10 @@ export default function ThemePreview() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Header */}
-        <div className="text-center space-y-3">
+        <div className="text-center space-y-3 mb-12">
           <p className="text-lg text-gray-600">
             Complete UI Component Preview
           </p>
@@ -37,7 +37,7 @@ export default function ThemePreview() {
         </div>
 
         {/* Button System */}
-        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
           <div>
             <h2>Button System</h2>
             <p className="text-gray-600 mt-2">
@@ -91,7 +91,7 @@ export default function ThemePreview() {
         </section>
 
         {/* Category Cards System */}
-        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+        <section className="space-y-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8">
           <div>
             <h2>Category Cards</h2>
             <p className="text-gray-600 mt-2">

@@ -13,7 +13,7 @@ export function Navbar() {
   const getTitleForPath = (path: string) => {
     switch (path) {
       case '/':
-        return 'Logopädie-Trainer';
+        return 'Font und Buttons';
       case '/theme-preview':
         return 'Theme Preview';
       case '/dashboard':
@@ -23,7 +23,7 @@ export function Navbar() {
       case '/impressum':
         return 'Impressum';
       default:
-        return 'Logopädie-Trainer';
+        return 'Font und Buttons';
     }
   };
 
@@ -37,11 +37,11 @@ export function Navbar() {
             href="/"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
-            Logopädie-Trainer
+            Font und Buttons
           </Link>
 
           <span className="text-gray-300 mx-1">—</span>
@@ -50,7 +50,7 @@ export function Navbar() {
             href="/theme-preview"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/theme-preview')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
@@ -63,7 +63,7 @@ export function Navbar() {
             href="/dashboard"
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
               isActive('/dashboard')
-                ? 'bg-gray-100 text-gray-900'
+                ? 'nav-tab-active'
                 : 'text-gray-700 hover:bg-gray-50'
             }`}
           >
