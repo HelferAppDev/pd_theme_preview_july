@@ -285,3 +285,74 @@ button, .button-label {
 .category-card.is-disabled .card-title {
   color: var(--color-text-disabled);
 }
+
+/* ===== THERAPY CARD SYSTEM (Dashboard) ===== */
+
+/* Base Therapy Card */
+.therapy-card {
+  background: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(30, 41, 59, 0.02);
+}
+
+.therapy-card .card-icon {
+  font-size: 44px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+  color: var(--color-secondary-blue);
+}
+
+.therapy-card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+/* Color variants for icons */
+.therapy-card.c-green .card-icon { color: var(--color-secondary-green); }
+.therapy-card.c-blue .card-icon { color: var(--color-secondary-blue); }
+.therapy-card.c-violet .card-icon { color: var(--color-accent-violet); }
+.therapy-card.c-yellow .card-icon { color: var(--color-primary-yellow); }
+
+/* Hover state */
+.therapy-card:hover:not(.is-disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px -5px rgba(30, 41, 59, 0.08);
+}
+
+.therapy-card:hover:not(.is-disabled) .card-icon {
+  transform: scale(1.1);
+}
+
+/* Dynamic border color on hover per category */
+.therapy-card.artikulation:hover { border-color: var(--color-secondary-green); }
+.therapy-card.verstehen:hover { border-color: var(--color-secondary-blue); }
+.therapy-card.wortschatz:hover { border-color: var(--color-accent-violet); }
+.therapy-card.grammatik:hover { border-color: var(--color-secondary-blue); }
+.therapy-card.schrift:hover { border-color: var(--color-primary-yellow); }
+
+/* Disabled state */
+.therapy-card.is-disabled {
+  background-color: var(--color-bg-disabled);
+  border-color: var(--color-bg-disabled);
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.therapy-card.is-disabled .card-icon,
+.therapy-card.is-disabled .card-title {
+  color: var(--color-text-disabled);
+}
